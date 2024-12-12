@@ -4,21 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="header-nav container">
         <div class="logo">
           <a>
             <svg width="40" height="40" class="header-logo">
-              <use href="./images/icon.svg#logo"></use>
+              <use href="./images/icon.svg#header-logo"></use>
             </svg>
-            <svg width="5.8" height="5.8" class="logo-dot">
-              <use href="./images/icon.svg#logo-dot"></use>
-            </svg>
+            <p class="logo-title">Personal</p>
           </a>
-          <p class="logo-title">Personal</p>
         </div>
 
         <div>
@@ -30,18 +30,23 @@
           </ul>
         </div>
 
-        <div>
+        <div class="resume-button">
           <button type="button" class="header-button">Resume</button>
+        </div>
+        <div class="threelinee">
+          <svg width="27" height="18" class="threeline">
+           <use href="./images/icon.svg#threeline"></use></svg>
         </div>
       </nav>
     </header>
     <main>
-      <section class="section-one">
+      <section class="section-one container">
         <div class="h1-left-chapter">
-          <h1>
-            Hello I'am <span class="h1-title">Shah. Frontend</span
-            ><span> Developer</span> Based In<span> India.</span>
-          </h1>
+          <img class="header-man" src="./images/column.png" alt="man">
+          <h2 class="h2style">
+            <span class="thin-word">Hello I'am </span><span class="thick-word">Shah. Frontend</span
+            ><span class="empty-word"> Developer</span><span class="thin-word"> Based In</span><span> India.</span>
+          </h2>
           <p class="h1-bottom-title">
             I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and
             typesetting industry. Lorem Ipsum has been the industry's standard
@@ -51,21 +56,21 @@
         </div>
         <div class="h1-bottom">
           <div class="h1-bottom-box">
-            <div class="h1-bottom-boxes"><a href="" class="facebook"></a></div>
-            <div class="h1-bottom-boxes"><a href="" class="reddit"></a></div>
-            <div class="h1-bottom-boxes">><a href="" class="twitter"></a></div>
-            <div class="h1-bottom-boxes"><a href="" class="discord"></a></div>
+            <div class="h1-bottom-boxes facebook"></div>
+            <div class="h1-bottom-boxes reddit"></div>
+            <div class="h1-bottom-boxes twitter"></div>
+            <div class="h1-bottom-boxes discord"></div>
           </div>
           <div class="h1-bottom-hr">
             <hr />
           </div>
         </div>
         <div class="h1-left-container">
-          <img src="" alt="" />
+          <img src="" alt=""/>
         </div>
       </section>
 
-      <section class="section-two">
+      <section class="section-two container">
         <h1 class="section-two-title">My Skills</h1>
         <ul class="section-two-list">
           <li class="section-two-boxes">Git</li>
@@ -81,14 +86,14 @@
         </ul>
       </section>
 
-      <section class="section-three">
+      <section class="section-three container">
         <h1>My Experience</h1>
         <div class="section-three-boxes"><a href=""></a></div>
         <div class="section-three-boxes"><a href=""></a></div>
         <div class="section-three-boxes"><a href=""></a></div>
       </section>
 
-      <section class="section-four">
+      <section class="section-four container">
         <div><img src="" alt="" /></div>
         <div>
           <h1>About Me</h1>
@@ -118,14 +123,79 @@
         </div>
       </section>
 
-      <section class="section-five">
-        <h1>My Projects</h1>
-        <div>
-            <img src="" alt="">
-            
+      <section class="section-five container">
+        <h2>My Projects</h2>
+        <div class="section-five-img-container">
+          <img src="" alt="" />
         </div>
-        <div></div>
-        <div></div>
+        <div class="section-five-title-container">
+          <h2>01</h2>
+          <br />
+          <h3>Crypto Screener Application</h3>
+          <br />
+          <p>
+            I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry. Lorem Ipsum has been the industry's standard
+            dummy text ever since the 1500s, when an unknown printer took a
+            galley of type and scrambled it to specimen book.
+          </p>
+        </div>
+        <div class="section-five-title-container">
+          <h2>02</h2>
+          <br />
+          <h3>Euphoria - Ecommerce (Apparels) Website Template</h3>
+          <br />
+          <p>
+            I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.
+            when an unknown printer took a galley of type and scrambled it to specimen book.
+          </p>  
+          <div class="section-five-img-container">
+            <img src="" alt="" />
+          </div>
+          <div class="section-five-img-container">
+            <img src="" alt="" />
+          </div>
+          <div class="section-five-title-container">
+            <h2>03</h2>
+            <br />
+            <h3>Blog Website Template</h3>
+            <br />
+            <p>
+              I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.
+            </p>
+          </div>
+
+      </section>
+
+      <section class="section-six container">
+        <div class="section-six-person">
+           <img src="" alt="">
+           <p>I recently had to jump on 10+ different calls across eight different countries to find the right owner.</p>
+           <hr>
+           <h4>Evren Shah</h4>
+           <p>Designer</p>
+        </div>
+        <div class="section-six-person">
+          <img src="" alt="">
+          <p>I recently had to jump on 10+ different calls across eight different countries to find the right owner.</p>
+          <hr>
+          <h4>Flora Sheen</h4>
+          <p>Designer</p>
+       </div>
+       <div class="section-six-person">
+        <img src="" alt="">
+        <p>I recently had to jump on 10+ different calls across eight different countries to find the right owner.</p>
+        <hr>
+        <h4>Evren Shah</h4>
+        <p>Designer</p>
+     </div>
+      </section>
+
+      <section class="section-form">
+        <div class="form">
+          <form action=""></form>
+        </div>
+        <div class="form-right-title"></div>
       </section>
     </main>
     <footer></footer>
